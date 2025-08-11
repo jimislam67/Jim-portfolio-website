@@ -1,8 +1,7 @@
-
-
 * {
       box-sizing: border-box;
       margin: 0;
+      -webkit-tap-highlight-color: transparent;
       padding: 0;
     }
 
@@ -119,7 +118,7 @@
     }
     
     .box-img {
-      padding: 1px;
+      padding: 0.1px;
       width: 35vw;
       height: 35vw;
       border-radius: 50%;
@@ -130,27 +129,30 @@
       initial-value: 0deg;
       inherits: false;
     }
-    .box-img::before {
+    .box-img::before,.box-img::after{
       position: absolute;
       content: "";
       width: 100%;
       height: 100%;
-      background: conic-gradient(from var(--angle), #EE00FF, #00FFB9, #CC0FB7);
+      background: conic-gradient(from var(--angle),transparent 50%,#EE00FF, #00FFB9, #CC0FB7);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: 50%;
-      animation: glowingBorder 2s linear infinite;
+      animation: glowingBorder 1.4s linear infinite;
     }
+  .box-img::after{
+    animation-delay: 0.7s;
+  }
     @keyframes glowingBorder {
       from {
         --angle: 0deg;
         filter: blur(2vw) hue-rotate(0deg) brightness(1.5);
-        
       }
       to {
         --angle: 360deg;
-        filter: blur(2vw) hue-rotate(360deg) brightness(1.5);
+      filter: blur(2vw) hue-rotate(360deg) brightness(1.5);
+        
       }
     }
     .item-img {
@@ -241,9 +243,13 @@ margin-bottom: 1rem;
 
 }
 .what-I-Do-Section-Title h4{
-  font-size: 25px;
+  font-size: 23px;
   margin-bottom: -0.4px;
 }
+.what-I-Do-Section-Title h1{
+  font-size: 33px;
+}
+
 .what-I-Do-Section-Parent{
   display: flex;
 }
@@ -306,14 +312,14 @@ color: lightgray;
 }
 .project-section-Title h4{
   font-size: 20px;
-    background: linear-gradient(30deg, dodgerblue, wheat,deeppink,dodgerblue
+    background: linear-gradient(30deg, dodgerblue, wheat,deeppink
     );
   color: transparent;
   background-clip: text;
 }
 .project-section-Title h3{
   font-size: 35px;
-  background: linear-gradient(30deg,deeppink,wheat,blue,deeppink);
+  background: linear-gradient(30deg,deeppink,wheat,deeppink);
   color: transparent;
   background-clip: text;
 }
@@ -366,10 +372,10 @@ text-align: center;
    color: transparent;
  }
 .contact-section-title h2{
-  font-size: 46px;
+  font-size: 43px;
 }
  .contact-section-title h4{
- font-size: 33px;
+ font-size: 30px;
 }
  #contact-section{
    border-radius: 10px;
