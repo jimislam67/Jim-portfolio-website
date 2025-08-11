@@ -308,16 +308,12 @@ color: lightgray;
   font-size: 20px;
     background: linear-gradient(30deg, dodgerblue, wheat,deeppink,dodgerblue
     );
-  margin: auto;
-  max-width: max-content;
   color: transparent;
   background-clip: text;
 }
 .project-section-Title h3{
   font-size: 35px;
   background: linear-gradient(30deg,deeppink,wheat,blue,deeppink);
-  margin: auto;
-  max-width: max-content;
   color: transparent;
   background-clip: text;
 }
@@ -368,8 +364,6 @@ text-align: center;
    background: linear-gradient(45deg, #00f2ff, #00ff95);
    background-clip: text;
    color: transparent;
-   max-width: max-content;
-   margin: auto;
  }
 .contact-section-title h2{
   font-size: 46px;
