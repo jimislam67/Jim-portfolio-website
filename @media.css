@@ -1,0 +1,257 @@
+@media (max-width: 768px) {
+      nav {
+        padding: 3px;
+        flex-direction: row;
+        align-items: center;
+      }
+      
+
+      .nav-Bar-Svg {
+        display: flex;
+        fill: var(--color--deepskyblue);
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+      }
+
+      .nav-Links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 50%;
+        background: black;
+        padding: 10px 0;
+        border-bottom-right-radius: 25px;
+        z-index: 999;
+        box-shadow: 0 0 10px #3C3C3C inset;
+      }
+
+      .nav-Links.active {
+        display: flex;
+      }
+
+      .nav-Links a {
+        font-size: 16px;
+        text-align: center;
+        margin: 10px auto;
+        display: block;
+      }
+
+      .brand-Name h6 {
+        font-size: 18px;
+        color: var(--color--deepskyblue);
+        padding-left: 10px;
+      }
+
+      .hero-area {
+        flex-direction: column;
+        margin-top: 90px;
+        padding: 0 20px;
+        align-items: center;
+        text-align: center;
+      }
+
+     .about-info{
+       text-align: left;
+       margin-left: -30px;
+       margin-top: 5vh;
+     }
+.box-img {
+  padding: 1px;
+  width: 75vw;
+  height: 75vw;
+  border-radius: 50%;
+  position: relative;
+}
+      .about-info {
+        order: 2;
+        max-width: 100%;
+      }
+
+      .about-info h2{
+        line-height: 0.8; /* একদম ঘন */
+      }
+
+      .about-info h2 {
+        font-size: 30px;
+        font-size: x-large;
+
+      }
+
+      .about-info h3 {
+        font-size: 20px;
+        line-height: 0.8;
+        background-image: linear-gradient(30deg,blue,deeppink);
+
+      }
+
+      .about-info h4 {
+        margin-top: -4px;
+
+        font-size: 16px;
+        line-height: 0.8;
+      }
+
+      .about-info p {
+        font-size: 14px;
+        margin-top: -4px;
+      }
+      /* what-I-Do-Section-Child  */
+   .what-I-Do-Section-Parent {
+     flex-direction: column;
+   }  
+  .what-I-Do-Section-Child  {
+    width: 93%;
+    margin: 4px auto;
+    border-radius: 7px;
+    border: 2px solid deepskyblue;
+
+  }
+  .what-I-Do-Section-Title h4 {
+  font-size: 10px;
+  margin-bottom: -0.2px;
+}
+ .what-I-Do-Section-Title h1{
+   font-size: 23px;
+   margin-bottom: 13px;
+
+ }
+.what-I-Do-Section-Child h2{
+  font-size: 24px;
+  text-align: center;
+}
+.what-I-Do-Section-Child p{
+ text-align: center;
+ font-size: 13px;
+}
+.what-I-Do-Section-Child a{
+  color: gold;
+  position: relative;
+  max-width: max-content;
+  display: block;
+  transition: 2s;
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+  text-decoration: underline;
+  padding-top: 10px;
+color: blue;
+}
+.what-I-Do-Section-Child a::after{
+  height: 1px;
+  background: blue;
+}
+}
+
+@media (max-width: 768px){
+  /* project section */
+ .project-section-parent{
+  display: flex;
+  flex-direction: column;
+}
+.project-section-child{
+  width: 87%;
+  filter: brightness(0.9); /* 150% light */
+}
+.project-section-Title h4{
+  font-size: 17px;
+font-family: serif;  
+}
+.project-section-Title h3{
+ font-size: 25px;
+ font-family: serif;  
+}
+.project-section-child h1 {
+  font-size: 17px;
+
+}
+
+.project-section-child p {
+  font-size: 10px;
+  font-weight: 700;
+
+}
+
+}
+@media (max-width: 768px) {
+  /* skill & about me section */
+}
+
+@media (max-width: 768px) {
+   /* contact section */
+ .contact-section-title{
+   margin-top: 3vh;
+ }
+ .contact-section-title h2{
+  font-size: 26px;
+}
+ .contact-section-title h4{
+ font-size: 13px;
+}
+
+ #contact-section{
+   margin-top: 30px;
+   margin-bottom: 20px;
+   border-radius: 10px;
+}
+.contact-section-parent{
+  text-align: center;
+  padding: 20px;
+  }
+
+
+.contact-section-child{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 99%;
+  padding: 10px;
+}
+.contact-section-child input,
+.contact-section-child textarea{
+  width: 100%;
+  margin: 4px auto;
+  outline: none;
+  padding: 10px;
+  background: #272727;
+  border: none;
+  box-shadow: 0 0 2px gold inset;
+  caret-color: #05FFE8;
+  color: #fff;
+  transition: 0.7s;
+  font-weight: bold;
+}
+
+.contact-section-child input::placeholder,
+.contact-section-child textarea::placeholder{
+  color: #ffd;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.contact-section-child input{
+  height: 35px;
+  border-radius: 6px;
+}
+.contact-section-child textarea{
+  height: 88px;
+  border-radius: 6px;
+}
+.contact-section-child div {
+  width: 30%;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.send-btn{
+  padding: 5px 40px;
+  font-size: 16px;
+}
+} 
+@media (981px <= width <= 991px){
+  body{
+    display: none;
+  }
+}

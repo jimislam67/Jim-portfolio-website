@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Design Portfolio</title>
+
+  <!-- CSS Links bootstrap -->
+  <link rel="stylesheet" href="/css/bootstrap.mon.css" type="text/css" media="all" />
+  
+  <!-- CSS Links style.css -->
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="@media.css" type="text/css" media="all" />
+
+  <style>
+    /* Inline custom styles can be placed here */
+  </style>
+</head>
+<body>
+  <section class="nav-section">
+    <header>
+      <nav>
+        <div class="brand-Name">
+          <h6>MD JIM ISLAM</h6>
+        </div>
+
+        <div onclick="toggleMenu()" class="nav-Bar">
+          <svg class="nav-Bar-Svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M0 96C0 78.3 14.3 64 32 64h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"/>
+          </svg>
+        </div>
+
+        <div id="nav-Links" class="nav-Links">
+          <a href="#hero-Section">home</a>
+          <a href="#what-I-Do-Section">service</a>
+          <a href="#project-section">portfolio</a>
+          <a href="#contact-section">contact</a>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+  <section id="hero-Section">
+    <div class="hero-area">
+      <div class="box about-info">
+        <h3>hello i’m,</h3>
+        <h2>MD JIM ISLAM.</h2>
+        <h4>frontend developer,</h4>
+        <p>From Jamalpur. A professional web developer with 2+ years experience. I’m passionate about making error-free and clean websites.</p>
+      </div>
+
+      <div class="box box-img">
+        <div class="item-img">
+          <img src="my pic.png" alt="My Photo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-I-Do-Section">
+    <div class="box what-I-Do-Section-Title">
+      <h4>wHat I dO</h4>
+      <h1>ProvidIng cuTTing eDge <br>digiTal serVice</h1>
+    </div>
+
+    <div class="box what-I-Do-Section-Parent">
+      <div class="what-I-Do-Section-Child">
+        <h2>web design</h2>
+        <p>creating beautifull and creative <br>web design</p>
+        <a href="#">learn more</a>
+      </div>
+
+      <div class="box what-I-Do-Section-Child">
+        <h2>web developmanting</h2>
+        <p>creating beautifull and creative <br>web design</p>
+        <a href="#">learn more</a>
+      </div>
+
+      <div class="box what-I-Do-Section-Child">
+        <h2>debugging</h2>
+        <p>clearing all bugs and cleaning the website is my daily work!</p>
+        <a href="#">learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="project-section">
+    <div class="box project-section-Title">
+      <h4>CREATIVE WORK</h4>
+      <h3>CHECK MY PEOJECT</h3>
+    </div>
+
+    <div class="project-section-parent">
+      <div class="box project-section-child">
+        <img src="3.jpeg" alt="AI Web App" />
+        <h1 style="font-family: serif;">AI WEB APP</h1>
+        <p>a firstast growing blockchain ai web app</p>
+      </div>
+
+      <div class="box project-section-child">
+        <img src="1.jpeg" alt="Business Web App" />
+        <h1 style="font-family: serif;">A BUSINESS WEB APP</h1>
+        <p>a profitable agency <br>web app</p>
+      </div>
+
+      <div class="box project-section-child">
+        <img src="2.jpeg" alt="Weather App" />
+        <h1 style="font-family: serif;">WEATHER APP</h1>
+        <p style="padding-left: 13px;">a real time data analysing <br>weather app</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="box contact-section-title">
+      <h4>get in touch</h4>
+      <h2>Let's work together</h2>
+    </div>
+  </section>
+
+  <section class="box" id="contact-section">
+    <form class="box contact-section-parent">
+      <h1>LET'S CONNECT</h1>
+      <div class="contact-section-child">
+        <input type="text" placeholder="Enter your name" required />   
+        <input type="email" placeholder="Enter your email" required />   
+        <textarea placeholder="Write a message......." required></textarea>  
+        <div>
+          <button class="send-btn" type="submit">send</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
